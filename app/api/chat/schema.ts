@@ -6,14 +6,14 @@ export const expenseSchema = z.object({
     category: z
       .string()
       .describe(
-        "Categoria da despesa.Categorias permitidas:ALIMENTAÇÃO,BARES E RESTAURANTES,CASA,COMPRAS,CUIDADOS PESSOAIS,EDUCAÇÃO,LAZER E HOBBIES,MERCADO,PETS,ROUPAS,SAÚDE,TRANSPORTE,OUTROS."
+        "Categoria da anotação.Categorias permitidas:COMPRAS,COMPROMISSOS,IDEIAS,NOTAS,FINANÇAS,LEMBRAR,OUTROS."
       ),
     amount: z.number().describe("Valor da despesa em R$."),
     date: z.string().describe("Data da despesa, no formato dd-MMM."),
     details: z.string().describe("Nome do produto ou serviço."),
     participants: z
       .array(z.string())
-      .describe("Participantes da despesa, como nomes de usuários."),
+      .describe("Participantes das anotações, como nomes de usuários."),
   }),
 });
 
