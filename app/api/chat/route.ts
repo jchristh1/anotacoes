@@ -24,7 +24,7 @@ export async function POST(req: Request) {
         })
         .replace(/(\w+), (\w+) (\d+), (\d+)/, "$4-$2-$3 ($1)") +
       ". Quando nenhuma data for fornecida, use a data atual.",
-    prompt: `Por favor, classifique as seguintes despesas: "${expense}"`,
+    prompt: `Por favor, classifique as seguintes anotações: "${expense}"`,
     schema: expenseSchema,
     onFinish({ object }) {
       // save object to database

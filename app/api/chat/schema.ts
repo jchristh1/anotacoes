@@ -8,9 +8,9 @@ export const expenseSchema = z.object({
       .describe(
         "Categoria da anotação.Categorias permitidas:COMPRAS,COMPROMISSOS,IDEIAS,NOTAS,FINANÇAS,LEMBRAR,OUTROS."
       ),
-    amount: z.number().describe("Valor da despesa em R$."),
-    date: z.string().describe("Data da despesa, no formato dd-MMM."),
-    details: z.string().describe("Nome do produto ou serviço."),
+    amount: z.number().describe("Valor da anotação em R$."),
+    date: z.string().describe("Data da anotação, no formato dd-MMM."),
+    details: z.string().describe("Nome da anotação."),
     participants: z
       .array(z.string())
       .describe("Participantes das anotações, como nomes de usuários."),
