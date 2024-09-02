@@ -38,7 +38,7 @@ const ExpenseView = ({ expense }: { expense: Expense | PartialExpense }) => {
           {expense?.category?.toLowerCase()}
         </div>
         <div className="text-emerald-600 dark:text-emerald-400 w-8 text-right">
-          ${expense?.amount}
+          R${expense?.amount}
         </div>
       </div>
     </motion.div>

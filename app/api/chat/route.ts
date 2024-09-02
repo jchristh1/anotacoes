@@ -16,7 +16,7 @@ export async function POST(req: Request) {
       // provide date (including day of week) for reference:
       "The current date is: " +
       new Date()
-        .toLocaleDateString("en-US", {
+        .toLocaleDateString("pt-BR", {
           year: "numeric",
           month: "short",
           day: "2-digit",
