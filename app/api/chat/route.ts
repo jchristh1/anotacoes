@@ -23,8 +23,8 @@ export async function POST(req: Request) {
           weekday: "short",
         })
         .replace(/(\w+), (\w+) (\d+), (\d+)/, "$4-$2-$3 ($1)") +
-      ". When no date is supplied, use the current date.",
-    prompt: `Please categorize the following expense: "${expense}"`,
+      ". Quando nenhuma data for fornecida, use a data atual.",
+    prompt: `Por favor, classifique as seguintes despesas: "${expense}"`,
     schema: expenseSchema,
     onFinish({ object }) {
       // save object to database

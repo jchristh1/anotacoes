@@ -86,7 +86,7 @@ export default function Home() {
           <input
             name="expense"
             className="bg-zinc-100 rounded-md px-2 py-1.5 w-full outline-none dark:bg-zinc-700 text-zinc-800 dark:text-zinc-300 md:max-w-[500px] max-w-[calc(100dvw-32px)] disabled:text-zinc-400 disabled:cursor-not-allowed placeholder:text-zinc-400"
-            placeholder="Expense a transaction..."
+            placeholder="Despesa de uma transação..."
             value={input}
             onChange={(event) => {
               setInput(event.target.value);
