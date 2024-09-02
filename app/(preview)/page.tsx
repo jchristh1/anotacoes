@@ -3,12 +3,10 @@
 
 "use client";
 
-import { ObjectIcon, VercelIcon } from "@/components/icons";
 import { experimental_useObject } from "ai/react";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
-import Link from "next/link";
 import { Expense, expenseSchema, PartialExpense } from "@/app/api/chat/schema";
 
 const ExpenseView = ({ expense }: { expense: Expense | PartialExpense }) => {
@@ -112,29 +110,7 @@ export default function Home() {
           </div>
         ) : (
           <motion.div className="h-[350px] px-4 w-full md:w-[500px] md:px-0 pt-20">
-            <div className="border rounded-lg p-6 flex flex-col gap-4 text-zinc-500 text-sm dark:text-zinc-400 dark:border-zinc-700">
-              <p className="flex flex-row justify-center gap-4 items-center text-zinc-900 dark:text-zinc-50">
-                <VercelIcon />
-                <span>+</span>
-                <ObjectIcon />
-              </p>
-              <p>
-                The useObject hook allows you to create interfaces that
-                represent a structured JSON object that is being streamed.
-              </p>
-              <p>
-                {" "}
-                Learn more about the{" "}
-                <Link
-                  className="text-blue-500 dark:text-blue-400"
-                  href="https://sdk.vercel.ai/docs/ai-sdk-ui/object-generation"
-                  target="_blank"
-                >
-                  useObject{" "}
-                </Link>
-                hook from Vercel AI SDK.
-              </p>
-            </div>
+            
           </motion.div>
         )}
       </div>
