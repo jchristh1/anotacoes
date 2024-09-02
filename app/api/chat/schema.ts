@@ -6,7 +6,7 @@ export const expenseSchema = z.object({
     category: z
       .string()
       .describe(
-        "Category of the expense. Allowed categories: TRAVEL, MEALS, ENTERTAINMENT, OFFICE SUPPLIES, OTHER."
+        "Categoria da despesa.Categorias permitidas:ALIMENTAÇÃO,BARES E RESTAURANTES,CASA,COMPRAS,CUIDADOS PESSOAIS,EDUCAÇÃO,LAZER E HOBBIES,MERCADO,PETS,ROUPAS,SAÚDE,TRANSPORTE,OUTROS."
       ),
     amount: z.number().describe("Amount of the expense in USD."),
     date: z.string().describe("Date of the expense, in dd-MMM format."),
