@@ -11,8 +11,8 @@ export async function POST(req: Request) {
   const result = await streamObject({
     model: openai("gpt-4-turbo"),
     system:
-      "You categorize expenses into one of the following categories: " +
-      "TRAVEL, MEALS, ENTERTAINMENT, OFFICE SUPPLIES, OTHER." +
+      "Você categoriza as despesas em uma das seguintes categorias: " +
+      "ALIMENTAÇÃO,BARES E RESTAURANTES,CASA,COMPRAS,CUIDADOS PESSOAIS,EDUCAÇÃO,LAZER E HOBBIES,MERCADO,PETS,ROUPAS,SAÚDE,TRANSPORTE,OUTROS." +
       // provide date (including day of week) for reference:
       "The current date is: " +
       new Date()
